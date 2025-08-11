@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project Title - Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Back Button Top -->
+    <div class="text-start p-3">
+      <a href="./Main.html" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+    <!-- Back Button Top -->
+    <div class="text-start p-3">
+      <a href="./test.html" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> test
+      </a>
+    </div>
+    <section class="py-5 bg-light text-center">
+      <div class="container">
+        <h1 class="section-title">Four-Way Traffic Light Control System</h1>
+        <p class="text-muted w-75 mx-auto">
+          Each side of the road has traffic lights to hep control the taffic
+          movement. The cars on the Eastern and Western side moves and stops at
+          the same time. And the cars on the Northern and Southern side moves
+          and stops at the same time also. Timers have been used to control the
+          traffic lights sequence.
+        </p>
+      </div>
+    </section>
+
+    <!-- Video Preview Section -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">Project Preview Video</h2>
+        <video id="projectVideo" class="rounded shadow" width="80%" controls>
+          <source src="./Videos/TrafficLights.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+        <div class="mt-3">
+          <button class="btn btn-primary" onclick="openFullScreen()">
+            View Fullscreen
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- Scada Images -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">SCADA PAGES BREAKDOWN</h2>
+        <div class="row g-4">
+          <!-- Traffic Lights Main Page -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./Pictures/TrafficLights_Main.png"
+              alt="Code Snippet 1"
+              class="img-fluid code-img"
+            />
+            <p class="mt-2 text-muted">
+              This snippet shows the home page. In this page the operator can
+              start and stop the system, and can also set the timer values. The
+              page shows an intersection where the traffic movement is
+              controlled by 4 sets of traffic lights. In the image above the
+              western and eastern traffic lights have a green indication, while
+              the northern and southern traffic lights have a red indication.
+            </p>
+          </div>
+          <!-- Traffic Lights Status -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./Pictures/TrafficLights_Status.png"
+              alt="Code Snippet 1"
+              class="img-fluid code-img"
+            />
+            <p class="mt-2 text-muted">
+              The image above shows the status page. In this page we can view
+              the behaviour of each traffic light, and we can also view the
+              timers.
+            </p>
+          </div>
+          <!-- Traffic Lights Admin Page -->
+          <div class="col-md-6 text-center">
+            <img
+              src="./Pictures/TrafficLights_Admin.png"
+              alt="Code Snippet 2"
+              class="img-fluid code-img"
+            />
+            <p class="mt-2 text-muted">
+              This snippet shows the administration page. The page can only be
+              accesed by the administrator. In this page, the administrator can
+              add new users, edit existing users and delete existing users.The
+              users have various functions and authorization in our project. The
+              administrator can also view the system info, and access the
+              calculator app.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Code Images with Descriptions -->
+    <section class="py-5 bg-light">
+      <div class="container">
+        <h2 class="section-title text-center">Code Breakdown</h2>
+        <div class="card" role="main">
+          <p>
+            download all the Project Files below. Extract Files and
+            open them on TIA Portal
+          </p>
+
+          <!-- DOWNLOAD SECTION -->
+          <div class="download" aria-label="download area">
+            <!-- Change href to the actual path of your .rar file -->
+            <a
+              id="downloadLink"
+              class="btn btn-primary"
+              href="./Code Files/Traffic Lights_20250811_1104.rar"
+              download="my-archive.rar"
+              title="Download .rar"
+            >
+              ⤓ Download Code
+            </a>
+          </div>
+        </div>
+
+        <div class="main-container">
+          <!-- Left side with image and description -->
+          <div class="left-section">
+            <h6 class="h6">Traffic Lights files</h6>
+            <img
+              src="./Pictures/Code_TIAPortal/TrafficLights/projectTree.png"
+              alt="Description Image"
+            />
+            <p>
+              The Image above shows all the files created in this project. The
+              files include the Main [OB1], Traffic_Lights_FC [FC1] and
+              Traffic_Lights_DB [DB1]. This are the only files that are required
+              for this project.
+            </p>
+          </div>
+
+          <!-- Right side with PDF links and descriptions -->
+          <div class="right-section">
+            <h6 class="codePdf">Code PDF Files</h6>
+            <div class="pdf-item">
+              <a
+                href="./Pictures/Code_TIAPortal/TrafficLights/Traffic_MainOB.pdf"
+                target="_blank"
+                >Main [OB1]</a
+              >
+              <p>
+                This file is the main function [OB1]. This file calls the
+                function with the name (Traffic_Lights_FC [FC1]). Open the pdf
+                file above and have a look at the code
+              </p>
+            </div>
+            <div class="pdf-item">
+              <a
+                href="./Pictures/Code_TIAPortal/TrafficLights/Traffic_Main(FC).pdf"
+                target="_blank"
+                >Traffic_Lights_FC [FC1]</a
+              >
+              <p>
+                This file is called by the main function above. The file
+                contains all the code that controls the Traffic lights in this
+                project. Open the pdf file above and have a look at the code
+              </p>
+            </div>
+            <div class="pdf-item">
+              <a
+                href="./Pictures/Code_TIAPortal/TrafficLights/Traffic(DB).pdf"
+                target="_blank"
+                >Traffic_Lights_DB [DB1]</a
+              >
+              <p>
+                This file contain all the variables needed for this project.
+                Open the pdf file above and have a look at the Variables used
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Back Button Bottom -->
+    <div class="text-center p-3">
+      <a href="./Main.html" class="btn btn-secondary">
+        <i class="bi bi-arrow-left"></i> Back to Portfolio
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2025 Gideon Rono. All rights reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+      function openFullScreen() {
+        const video = document.getElementById("projectVideo");
+        if (video.requestFullscreen) {
+          video.requestFullscreen();
+        } else if (video.mozRequestFullScreen) {
+          /* Firefox */
+          video.mozRequestFullScreen();
+        } else if (video.webkitRequestFullscreen) {
+          /* Chrome, Safari & Opera */
+          video.webkitRequestFullscreen();
+        } else if (video.msRequestFullscreen) {
+          /* IE/Edge */
+          video.msRequestFullscreen();
+        }
+      }
+    </script>
+  </body>
+</html>

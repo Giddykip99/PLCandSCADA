@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>PLC&SCADA Projects</title>
+    <!-- Bootstrap CSS CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      body {
+        padding-top: 56px; /* For fixed navbar spacing */
+      }
+      .hero {
+        background-color: #f8f9fa;
+        padding: 60px 15px;
+        text-align: center;
+      }
+      .project-card {
+        margin-bottom: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="#">MyPortfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link active" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-section text-white text-center py-5" id="hero">
+      <div class="container">
+        <img
+          src="./Pictures/pic.JPG"
+          alt="Your Photo"
+          class="rounded-circle mb-3"
+          width="120"
+        />
+        <h1 class="display-4">GIDEON RONO</h1>
+        <p class="lead">
+          Instrumentation & Control Engineer | 2+ Years Experience in
+          Instrumentation Maintenance, PLC, and SCADA| Turning Ideas into
+          Reliable, Real-World Solutions
+        </p>
+        <a href="#projects" class="btn btn-light btn-lg mt-3">View My Work</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-5">
+      <div class="container text-center">
+        <h2 class="section-title">About Me</h2>
+        <p class="text-muted w-75 mx-auto">
+          I am an Instrumentation and Control Engineer with over two years of
+          experience in instrumentation maintenance, troubleshooting, and
+          calibration. Skilled in PLC programming and SCADA system design and
+          implementation, with a strong ability to learn and adapt to new
+          technologies quickly. Passionate about turning concepts into practical
+          solutions that improve processes, enhance efficiency, and deliver a
+          seamless user experience. I am capable of working effectively both
+          independently and in collaborative team environments. Below, you can
+          explore some of my PLC and SCADA projects.
+        </p>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="py-5" id="projects">
+      <div class="container">
+        <h2 class="mb-4 text-center">PROJECTS</h2>
+        <div class="row">
+          <!-- Vetical Roller Mill-->
+          <div class="col-md-6 project-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./Pictures/Mill_Home.png"
+                class="card-img-top"
+                alt="Project 1"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  Simplified Cement Mill Plant With PID Control
+                </h5>
+                <p class="card-text">
+                  This Project is a simplified cement production plant. The
+                  project has covered the material feeding process, the grinding
+                  process and the storage process. In the material feeding
+                  process, the operator has the ability to select which type of
+                  cement to grind. PID controllers have been used to maintain
+                  the feed rate at a specified setpoint for each raw material
+                  required. The feed rate depends on the type of cement
+                  selected. Click the button below to view the project in
+                  detail.
+                </p>
+                <a href="./VRM Mill.html" class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Paint Mixer Tanks -->
+          <div class="col-md-6 project-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./Pictures/PaintMixer_Home.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Paint Mixer Tanks</h5>
+                <p class="card-text">
+                  This Project is a paint mixer project. Different colors are
+                  fed into tank 1, tank 2 and tank 3. The diffrent colors are
+                  then fed into a main tank. The main tank has a mixer which
+                  helps in mixing the different colors. The mixed colors are
+                  then drained into a transporting lorry or a storage facility.
+                  After the low level sensor is reached, the process starts over
+                  again. Timers are used to open the valves in a specified
+                  sequence. Click the button below to view the project in
+                  detail.
+                </p>
+                <a href="./PaintMixer.html" class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- Project 3 -->
+          <div class="col-md-6 project-card">
+            <div class="card h-100 shadow-sm">
+              <img
+                src="./Pictures/TrafficLights_Main.png"
+                class="card-img-top"
+                alt="Project 2"
+              />
+              <div class="card-body">
+                <h5 class="card-title">
+                  <fieldset>Four-Way Traffic Light Control System</fieldset>
+                </h5>
+                <p class="card-text">
+                  This project is a Four-Way Traffic Light Control System. Each
+                  side of the road has traffic lights to hep control the taffic
+                  movement. The cars on the Eastern and Western side moves and
+                  stops at the same time. And the cars on the Northern and
+                  Southern side moves and stops at the same time also. Timers
+                  have been used to control the traffic lights sequence. Click
+                  the button below to view the project in detail.
+                </p>
+                <a href="./TrafficLights.html" class="btn btn-primary"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <footer class="bg-dark text-white py-4" id="contact">
+      <div class="container text-center">
+        <h5>Contact Me</h5>
+        <p>Email: gidionkipkorirrono@gmail.com | Phone: +254700693457</p>
+        <p>
+          <a href="http://linkedin.com/in/gideon-rono-718372233/" class="text-white me-3" target="_blank">LinkedIn</a>
+          <a href="https://github.com/Giddykip99" class="text-white me-3" target="_blank">GitHub</a>
+          <a href="https://x.com/Giddykip5" class="text-white" target="_blank">Twitter</a>
+        </p>
+        <small>&copy; 2025 Gideon Rono</small>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS Bundle CDN (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
