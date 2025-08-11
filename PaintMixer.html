@@ -25,8 +25,8 @@
       <div class="container">
         <h1 class="section-title">Paint Mixer Tanks</h1>
         <p class="text-muted w-75 mx-auto">
-          Different colors are fed into tank 1, tank 2 and tank 3. The diffrent
-          colors are then fed into a main tank. The main tank has a mixer which
+          Different colors are fed into tank 1, tank 2, and tank 3. The different
+          Colors are then fed into a main tank. The main tank has a mixer, which
           helps in mixing the different colors. The mixed colors are then
           drained into a transporting lorry or a storage facility. After the low
           level sensor of the main tank is reached, the process starts over
@@ -39,15 +39,8 @@
     <section class="py-5">
       <div class="container text-center">
         <h2 class="section-title">Project Preview Video</h2>
-        <video id="projectVideo" class="rounded shadow" width="80%" controls>
-          <source src="./Videos/tanks_1.mp4" type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
-        <div class="mt-3">
-          <button class="btn btn-primary" onclick="openFullScreen()">
-            View Fullscreen
-          </button>
-        </div>
+       <iframe width="560" height="315" src="https://www.youtube.com/embed/DcomkqxT6O0?si=iHWTobIM5Op15c6Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        
       </div>
     </section>
 
@@ -64,8 +57,8 @@
               class="img-fluid code-img"
             />
             <p class="mt-2 text-muted">
-              This snippet shows the home page. In this page the operator can
-              start and stop the sytem, he can also select the operation
+              This snippet shows the home page. On this page, the operator can
+              start and stop the system, and they can also select the operation
               mode(either Automatic or Manual Mode). This page has 3 small tanks
               and one main tank. Each of the 3 tanks has inflow valves and
               outflow valves. The main tank has a mixer motor and a draining
@@ -80,10 +73,9 @@
               class="img-fluid code-img"
             />
             <p class="mt-2 text-muted">
-              This snippet shows the valve status page. In this page the
-              operator can view the status of all the inflow valves, outflow
-              valves, and draining valve. They can also view the tank behaviour
-              during the filling process. All the 4 tanks are displayed in this
+              This snippet shows the valve status page. In this page,
+              The operator can view the status of all the inflow valves, outflow valves, and a draining valve. They can also view the tank behaviour
+              during the filling process. All 4 tanks are displayed in this
               page, and all the timers used are also displayed in this page.
             </p>
           </div>
@@ -96,7 +88,7 @@
             />
             <p class="mt-2 text-muted">
               This image shows the alarms page. This page displays all the
-              alarms incase any valve fails.
+              alarms in case any valve fails.
             </p>
           </div>
           <!-- Paint Mixer Trends Page -->
@@ -107,9 +99,9 @@
               class="img-fluid code-img"
             />
             <p class="mt-2 text-muted">
-              This snippet Shows the trends page. The trend lines represent the
-              process of fillng the 4 tanks. When filling the tanks, the trend
-              line rises and when draining the tanks, the trend line falls.
+              This snippet shows the trends page. The trend lines represent the
+              process of filling the 4 tanks. When filling the tanks, the trend
+              lines rise, and when draining the tanks, the trend line falls.
             </p>
           </div>
           <!-- Paint Mixer Admin Page -->
@@ -121,10 +113,10 @@
             />
             <p class="mt-2 text-muted">
               This snippet shows the administration page. The page can only be
-              accesed by the administrator. In this page, the administrator can
-              add new users, edit existing users and delete existing users.The
+              accessed by the administrator. In this page, the administrator can
+              add new users, edit existing users, and delete existing users. The
               users have various functions and authorization in our project. The
-              administrator can also view the system info, priview reports and
+              administrator can also view the system info, preview reports, and
               print reports.
             </p>
           </div>
@@ -138,8 +130,8 @@
         <h2 class="section-title text-center">Code Breakdown</h2>
         <div class="card" role="main">
           <p>
-            download all the Project Files below. Extract Files and
-            open them on TIA Portal
+            Download all the Project Files below. Extract Files and
+            Open them on TIA Portal
           </p>
 
           <!-- DOWNLOAD SECTION -->
@@ -166,10 +158,10 @@
               alt="Description Image"
             />
             <p>
-              The Image you see in the picture above is showing a folder
+              The Image you see in the picture above shows a folder
               containing The Main function(OB1) and the data block used to store
-              our variables. The code for the main function and the dataBlock
-              variables are shared on the pdf files you see on the right side of
+              our variables. The code for the main function and the data block
+              variables are shared in the PDF files you see on the right side of
               this image.
             </p>
           </div>
@@ -185,11 +177,11 @@
               >
               <p>
                 This File handles the process of starting our system and also
-                selecting the operation mode. Either manual or outomatic mode.
+                selecting the operation mode. Either manual or automatic mode.
                 It also calls the main functions for the automatic and manual
                 modes. The functions are found in the folders named
                 (Manual_Mode) and (Automatic_Mode) as shown in the image on your
-                right. Open the pdf file above and have a look at the code
+                right. Open the PDF file above and have a look at the code
               </p>
             </div>
             <div class="pdf-item">
@@ -200,7 +192,7 @@
               >
               <p>
                 This file contains all the variables used in this project. Open
-                the pdf file above and have a look at all the variables used
+                The PDF file above and have a look at all the variables used
               </p>
             </div>
           </div>
@@ -215,10 +207,10 @@
               alt="Description Image"
             />
             <p>
-              The Image you see in the picture above is showing a folder
-              containing two shared functions. The two functions are use to
+              The Image you see in the picture above shows a folder
+              containing two shared functions. The two functions are used to
               simulate the tank level for the main tank and the 3 small tanks.
-              The code for each function is shared on the pdf files you see on
+              The code for each function is shared in the PDF files you see on
               the right side of this image.
             </p>
           </div>
@@ -234,8 +226,8 @@
               >
               <p>
                 This File handles level simulation for the 3 small tanks. It
-                also handles the level sensors simulation for the 3 tanks.Open
-                the pdf file above and have a look at the code
+                also handles the level sensors simulation for the 3 tanks. Open
+                The PDF file above and have a look at the code
               </p>
             </div>
             <div class="pdf-item">
@@ -246,7 +238,7 @@
               >
               <p>
                 This File handles the main tank level simulation. It also
-                handles the level sensors simulation. Open the pdf file above
+                handles the level sensors simulation. Open the PDF file above
                 and have a look at the code
               </p>
             </div>
@@ -264,9 +256,9 @@
             />
             <p>
               The Picture above shows an image of the automatic mode folder. The
-              folde contains all the code needed for the automatic mode. When
-              the operator select automatic mode, the code in this folder is
-              activated. The pdf files for all the files inside it are on the
+              folder contains all the code needed for the automatic mode. When
+              the operator selects automatic mode, the code in this folder is
+              activated. The PDF files for all the files inside it are on the
               right side of this image.
             </p>
           </div>
@@ -282,8 +274,8 @@
               >
               <p>
                 This is a cyclic interrupt that runs every 100ms. It only calls
-                the function with the name (3Tanks_Level_ControlAuto (FC9)). The
-                file can be seen on the image on the left. View the pdf file by
+                The function with the name (3Tanks_Level_ControlAuto (FC9)). The
+                file can be seen in the image on the left. View the PDF file by
                 clicking the link above
               </p>
             </div>
@@ -295,8 +287,8 @@
               >
               <p>
                 This is a cyclic interrupt that runs every 33ms. It only calls
-                the function with the name (MainTank_Level_ControlAuto(FC6)).
-                The file can be seen on the image on the left. View the pdf file
+                The function with the name (MainTank_Level_ControlAuto(FC6)).
+                The file can be seen in the image on the left. View the PDF file
                 by clicking the link above
               </p>
             </div>
@@ -321,8 +313,8 @@
               >
               <p>
                 The Code in this PDF contains all the code for the automatic
-                mode. When automatic mode is selected the code in this pdf is
-                ecxecuted.
+                mode. When automatic mode is selected, the code in this PDF is
+                executed.
               </p>
             </div>
             <div class="pdf-item">
@@ -352,8 +344,8 @@
             <p>
               The Picture above shows an image of the manual mode folder. The
               folder contains all the code needed for the manual mode. When the
-              operator select manual mode, the code in this folder is activated.
-              The pdf files for all the files inside it are on the right side of
+              operator selects manual mode, the code in this folder is activated.
+              The PDF files for all the files inside it are on the right side of
               this image.
             </p>
           </div>
@@ -369,8 +361,8 @@
               >
               <p>
                 This is a cyclic interrupt that runs every 100ms. It only calls
-                the function with the name (3Tanks_Level_ControlManual [FC2]).
-                The file can be seen on the image on the left. View the pdf file
+                The function with the name (3Tanks_Level_ControlManual [FC2]).
+                The file can be seen in the image on the left. View the PDF file
                 by clicking the link above
               </p>
             </div>
@@ -382,8 +374,8 @@
               >
               <p>
                 This is a cyclic interrupt that runs every 100ms. It only calls
-                the function with the name (MainTank_Level_ControlManual(FC7)).
-                The file can be seen on the image on the left. View the pdf file
+                The function with the name (MainTank_Level_ControlManual(FC7)).
+                The file can be seen in the image on the left. View the pdf file
                 by clicking the link above
               </p>
             </div>
@@ -421,8 +413,8 @@
               >
               <p>
                 The Code in this PDF contains all the code for the Manual mode.
-                When Manual mode is selected the code in this pdf is ecxecuted.
-                This file calls the funtion with the name Valve_Controls [FC8]
+                When Manual mode is selected, the code in this PDF is executed.
+                This file calls the function with the name Valve_Controls [FC8]
               </p>
             </div>
             <div class="pdf-item">
@@ -433,7 +425,7 @@
               >
               <p>
                 This function is used for Starting Valves and Stopping. RS
-                Flip-flop is used in this function. The function is also used to
+                A flip-flop is used in this function. The function is also used to
                 reset errors and test the valves. This function is called by the
                 Manual_Mode_FC [FC4] function.
               </p>
@@ -475,3 +467,4 @@
     </script>
   </body>
 </html>
+
