@@ -44,20 +44,10 @@
     <section class="py-5">
       <div class="container text-center">
         <h2 class="section-title">Project Preview Video</h2>
-             <iframe
-          width="560"
-          height="315"
-          src="https://youtu.be/dBmUSpcoGqw?si=RXaLnbpAeUG3wQAX"
-          title="YouTube video player"
-          frameborder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowfullscreen
-        >
-        </iframe>
+         <iframe width="560" height="315" src="https://www.youtube.com/embed/6h5mckkYy-I?si=zOlijY9GaqqEpnHV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+           
+         </iframe>
         <div class="mt-3">
-          <button class="btn btn-primary" onclick="openFullScreen()">
-            View Fullscreen
-          </button>
         </div>
       </div>
     </section>
@@ -75,11 +65,11 @@
               class="img-fluid code-img"
             />
             <p class="mt-2 text-muted">
-              This snippet shows the cement Mill page. In this page you can
+              This snippet shows the cement Mill page. On this page, you can
               start and stop the system, and you can also select the operation
               mode, either manual or automatic mode. In this page, raw materials
-              comming from material feeding page are fed into the grinding mill.
-              The grinded materials from the mill are the sucked by the 1800kw
+              coming from the material feeding page are fed into the grinding mill.
+              The grinded materials from the mill are then sucked by the 1800kw
               fan through the bag filter. The fine materials are then stored in
               the silo, while the course materials are taken back into the mill
               for more grinding.
@@ -93,14 +83,14 @@
               class="img-fluid code-img"
             />
             <p class="mt-2 text-muted">
-              This snippet shows the Material Feeding page. All the raw material
-              needed for cement production are measured in this page, the raw
-              materials are: Clinker, Gypsum, Limestone and Pozzolana. In this
-              page the operator can set the mill grinding rate, i.e 310 tph. The
-              operator can also select the type of cement needed as the end
+              This snippet shows the Material Feeding page. All the raw materials
+              needed for cement production are measured on this page, the raw
+              Materials are: Clinker, Gypsum, Limestone, and Pozzolana. In this
+              page the operator can set the mill grinding rate, i.e, 310 tph. The
+              operator can also select the type of cement needed for the end
               product, and the raw materials setpoints will be populated with
               values depending on the cement type selected. For this plant, we
-              have 4 diffrent types of cement that can be selected (In the
+              have 4 different types of cement that can be selected (In the
               snippet above KP_Silver is selected). A PID controller is used to
               maintain the actual feed rate of each raw material near the
               desired setpoint, as shown in the snippet above.
@@ -119,7 +109,7 @@
               rate of the raw materials, and the red line is the speed of the
               motor. The green light(actual feed rate) tries to get to the black
               line(the setpoint) and remain at that point. The motor speed at
-              first ramps up in order to get the actual feed rate to the
+              First ramps up in order to get the actual feed rate to the
               setpoint, and then reduces to a value where it can maintain the
               actual feed at the setpoint.
             </p>
@@ -133,10 +123,10 @@
             />
             <p class="mt-2 text-muted">
               This snippet shows the administration page. The page can only be
-              accesed by the administrator. In this page, the administrator can
-              add new users, edit existing users and delete existing users.The
+              accessed by the administrator. On this page, the administrator can
+              add new users, edit existing users, and delete existing users. The
               users have various functions and authorization in our project. The
-              administrator can also view the system info, priview reports and
+              administrator can also view the system info, preview reports, and
               print reports.
             </p>
           </div>
@@ -149,11 +139,11 @@
             />
             <p class="mt-2 text-muted">
               This snippet shows the Alarms page. When any component in our
-              project happens to fail, the error will be displayed in this page.
-              For example if a certain belt has swayed and the belt sway switch
-              has been activated, we will get the alarm in this page. We can
+              project happens to fail, the error will be displayed on this page.
+              For example, if a certain belt has swayed and the belt sway switch
+              has been activated, we will get the alarm on this page. We can
               then acknowledge the errors and reset them, or send technicians to
-              check it physically in the field.
+              check them physically in the field.
             </p>
           </div>
         </div>
@@ -167,8 +157,8 @@
 
         <div class="card" role="main">
           <p>
-            download all the Project Files below. Extract Files and
-            open them on TIA Portal
+            Download all the Project Files below. Extract Files and
+            Open them on TIA Portal
           </p>
 
           <!-- DOWNLOAD SECTION -->
@@ -196,11 +186,11 @@
               alt="Description Image"
             />
             <p>
-              The Image you see in the picture above is showing a folder
+              The Image you see in the picture above shows a folder
               containing The Main function(OB1) and a cyclic interrupt that runs
               every 100ms. The cyclic interrupt simulates the silo level and the
-              mill temperature. The code for the two function are shared on the
-              pdf files you see on the right side of this image.
+              mill temperature. The code for the two functions is shared in the
+              PDF files you see on the right side of this image.
             </p>
           </div>
 
@@ -215,10 +205,10 @@
               >
               <p>
                 This File handles the process of simulating the silo level and
-                temperature inside the mill. When grinding process starts, the
-                silo level starts to rise and the temperature of the mill also
+                temperature inside the mill. When the grinding process starts, the
+                silo level starts to rise, and the temperature of the mill also
                 increases. This cyclic interrupt is activated every 100ms. Click
-                on the pdf link above to view the code.
+                on the PDF link above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -230,9 +220,9 @@
               <p>
                 This file contains the code to start and stop the system. It
                 also contains the code to select the operation mode(either
-                manual or automatic mode). The functions that handles both modes
-                are also called in this block. Click on the pdf link above to
-                view the code.
+                manual or automatic mode). The functions that handle both modes
+                are also called in this block. Click on the PDF link above to
+                View the code.
               </p>
             </div>
           </div>
@@ -264,9 +254,9 @@
                 >Belts&BE [DB9]-PDF</a
               >
               <p>
-                This File contains all the conveyor belts motors and all bucket
-                elevetors motors that were used in this project. Click on the
-                pdf link above to view the code.
+                This File contains all the conveyor belts, motor,s and all buckets
+                Elevator motors that were used in this project. Click on the
+                The PDF link above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -277,7 +267,7 @@
               >
               <p>
                 The file above has all the cement types that the operator can
-                select. Each cement type has setpoints for each raw materials
+                select. Each cement type has setpoints for each raw material
                 required. It also has a select button and an indication if the
                 cement type is selected. Click on the pdf link above to view the
                 code.
@@ -367,7 +357,7 @@
               <p>
                 This function calls the function with the
                 name(Belt_Errors_AutoMode[FC7]]). The function has been called
-                repeatedly for all the conveyor belts and bucket elevetors we
+                Repeatedly for all the conveyor belts and bucket elevators we
                 have used in this project.
               </p>
             </div>
@@ -598,6 +588,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
 
 
 
