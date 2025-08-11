@@ -30,7 +30,7 @@
         <p class="text-muted w-75 mx-auto">
           The project has covered the material feeding process, the grinding
           process and the storage process. In the material feeding process, the
-          operator can select which type of cement to grind. PID
+          Operator can select which type of cement to grind. PID
           controllers have been used to maintain the feed rate at a specified
           setpoint for each raw material required. The feed rate depends on the
           type of cement selected. Watch the video below to see the functioning
@@ -86,8 +86,8 @@
               This snippet shows the Material Feeding page. All the raw materials
               needed for cement production are measured on this page, the raw
               Materials are: Clinker, Gypsum, Limestone, and Pozzolana. In this
-              page the operator can set the mill grinding rate, i.e, 310 tph. The
-              operator can also select the type of cement needed for the end
+              The operator can set the mill grinding rate, i.e, 310 tph. The
+              Operator can also select the type of cement needed for the end
               product, and the raw materials setpoints will be populated with
               values depending on the cement type selected. For this plant, we
               have 4 different types of cement that can be selected (In the
@@ -109,7 +109,7 @@
               rate of the raw materials, and the red line is the speed of the
               motor. The green light(actual feed rate) tries to get to the black
               line(the setpoint) and remain at that point. The motor speed at
-              First ramps up in order to get the actual feed rate to the
+              First ramps up to get the actual feed rate to the
               setpoint, and then reduces to a value where it can maintain the
               actual feed at the setpoint.
             </p>
@@ -126,7 +126,7 @@
               accessed by the administrator. On this page, the administrator can
               add new users, edit existing users, and delete existing users. The
               users have various functions and authorization in our project. The
-              administrator can also view the system info, preview reports, and
+              Administrator can also view the system info, preview reports, and
               print reports.
             </p>
           </div>
@@ -206,7 +206,7 @@
               <p>
                 This File handles the process of simulating the silo level and
                 temperature inside the mill. When the grinding process starts, the
-                silo level starts to rise, and the temperature of the mill also
+                Silo level starts to rise, and the temperature of the mill also
                 increases. This cyclic interrupt is activated every 100ms. Click
                 on the PDF link above to view the code.
               </p>
@@ -237,7 +237,7 @@
               alt="Description Image"
             />
             <p>
-              The Image you see in the picture above is showing a folder
+              The Image you see in the picture above shows a folder
               containing all the data blocks used in this project. The data
               blocks have been used to store all the variables needed for this
               project.
@@ -254,9 +254,9 @@
                 >Belts&BE [DB9]-PDF</a
               >
               <p>
-                This File contains all the conveyor belts, motor,s and all buckets
+                This File contains all the conveyor belts, motors, and all buckets
                 Elevator motors that were used in this project. Click on the
-                The PDF link above to view the code.
+                The PDF link above is to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -268,8 +268,8 @@
               <p>
                 The file above has all the cement types that the operator can
                 select. Each cement type has setpoints for each raw material
-                required. It also has a select button and an indication if the
-                cement type is selected. Click on the pdf link above to view the
+                required. It also has a select button and an indication of whether the
+                Cement type is selected. Click on the PDF link above to view the
                 code.
               </p>
             </div>
@@ -282,8 +282,8 @@
               <p>
                 This File has the start and stop system variables, the mode
                 selection variables, temperature variables, level variables, and
-                all the motors and fans that do not drive conveyor belts. Click
-                on the pdf link above to view the code.
+                All the motors and fans that do not drive conveyor belts. Click
+                On the PDF link above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -295,7 +295,7 @@
               <p>
                 This file contains all variables associated with every raw
                 material belt. The 4 raw materials belts variables are stored in
-                this file. Click on the pdf link above to view the code.
+                this file. Click on the PDF link above to view the code.
               </p>
             </div>
           </div>
@@ -312,9 +312,9 @@
             />
             <p>
               The Picture above shows an image of the automatic mode folder. The
-              folde contains all the code needed for the automatic mode. When
-              the operator select automatic mode, the code in this folder is
-              activated. The pdf files for all the files inside it are on the
+              folder contains all the code needed for the automatic mode. When
+              the operator selects automatic mode, the code in this folder is
+              activated. The PDF files for all the files inside it are on the
               right side of this image.
             </p>
           </div>
@@ -331,8 +331,8 @@
               <p>
                 When the operator selects the automatic mode and starts the
                 system, the code in this file is executed. The sequence of
-                operation is explained in the file containing the code. Click on
-                the pdf link above to view the code.
+                the operation is explained in the file containing the code. Click on
+                The PDF link above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -345,7 +345,7 @@
                 This file will be called by the function below
                 it(ErrorHandlingAuto[FC8]). The code is used to simulate errors
                 and reset them, the errors have been used in the alarms page on
-                our SCADA. Click on the pdf link above to view the code.
+                our SCADA. Click on the PDF link above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -356,8 +356,8 @@
               >
               <p>
                 This function calls the function with the
-                name(Belt_Errors_AutoMode[FC7]]). The function has been called
-                Repeatedly for all the conveyor belts and bucket elevators we
+                name(Belt_Errors_AutoMode[FC7]). The function has been called
+                Repeatedly for all the conveyor belts and bucket elevators, we
                 have used in this project.
               </p>
             </div>
@@ -375,8 +375,8 @@
             <p>
               The Picture above shows an image of the manual mode folder. The
               folder contains all the code needed for the manual mode. When the
-              operator select manual mode, the code in this folder is activated.
-              The pdf files for all the files inside it are on the right side of
+              operator selects manual mode, the code in this folder is activated.
+              The PDF files for all the files inside it are on the right side of
               this image.
             </p>
           </div>
@@ -393,10 +393,10 @@
               <p>
                 This File contains the code to start and stop a motor. The file
                 also contains the code to set and reset errors. The function
-                will be called several times by this file
+                will be called several times by this file:
                 (ManualModeFunction_Block[FC1]). It will be called for each
                 conveyor belt and each bucket that requires the functionality
-                provided by the code in this file. Click on the pdf link above
+                provided by the code in this file. Click on the PDF link above
                 to view the code. The file is a shared function.
               </p>
             </div>
@@ -408,11 +408,11 @@
               >
               <p>
                 This File contains the code to drive a motor in either reverse
-                or foward mode and also stop it. The file also contains the code
+                or forward mode and also stop it. The file also contains the code
                 to set and reset errors. The function will be called several
                 times by this file (ManualModeFunction_Block[FC1]). It will be
-                called for each conveyor belt that needs to be operated in both
-                foward or reverse mode. Click on the pdf link above to view the
+                called for each conveyor belt that needs to be operated in either
+                forward or reverse mode. Click on the PDF link above to view the
                 code. The file is a shared function.
               </p>
             </div>
@@ -424,10 +424,10 @@
               >
               <p>
                 When the operator selects the Manual mode and starts the system,
-                the code in this file is executed. The sequence of operation is
-                explained in the file containing the code. Click on the pdf link
-                above to view the code. All the functions in the manual_Mode
-                folder are called in this file.
+                The code in this file is executed. The sequence of operation is
+                explained in the file containing the code.All the functions in the manual_Mode
+                folders are called in this file. Click on the PDF link
+                above to view the code.
               </p>
             </div>
             <div class="pdf-item">
@@ -440,8 +440,8 @@
                 This File contains the code to start and stop a motor. The
                 function will be called several times by this file
                 (ManualModeFunction_Block[FC1]). It will be called for each
-                motor that just requires an ON/OFF functionality.Click on the
-                pdf link above to view the code. The file is a shared function.
+                motor that requires an ON/OFF functionality. Click on the
+                PDF link above to view the code. The file is a shared function.
               </p>
             </div>
           </div>
@@ -458,7 +458,7 @@
             <p>
               The Picture above shows an image of the weigh feeders PID
               simulation folder. This folder handles all the functions that help
-              us simulate the PID'S for all raw materials belts. The pdf files
+              us simulate the PID for all the raw materials belts. The PDF files
               for all the files inside it are on the right side of this image.
             </p>
           </div>
@@ -474,10 +474,10 @@
               >
               <p>
                 This is a cyclic interrupt that runs every 0.5ms. The purpose of
-                this block is to check the tye of cement selected at any time
-                and compute the setpoints for each raw material neede. This
+                this block is to check the type of cement selected at any time
+                and compute the setpoints for each raw material needed. This
                 happens every 0.5ms to ensure it detects any change in selection
-                immediately . View the pdf file by clicking the link above
+                immediately. View the PDF file by clicking the link above
               </p>
             </div>
             <div class="pdf-item">
@@ -489,9 +489,9 @@
               <p>
                 This is a cyclic interrupt that runs every 1ms. It calls the
                 function with the name (LoadCell_Simulation(FC) [FC2]). The
-                purpose is to compute the loadcell reading every 1ms, This helps
-                us in simulating the PID by giving us consistent loadcell
-                reading. View the pdf file by clicking the link above
+                purpose is to compute the loadcell reading every 1ms. This helps
+                us in simulating the PID by giving us a consistent load cell
+                reading. View the PDF file by clicking the link above
               </p>
             </div>
             <div class="pdf-item">
@@ -501,7 +501,7 @@
                 >PIDFunctions [OB30]-PDF</a
               >
               <p>
-                This Block is a cyclic interrupt block, that runs every 1ms. The
+                This Block is a cyclic interrupt block that runs every 1ms. The
                 Block calls all the PID compact Blocks. This is the block where
                 tuning and configuration of PIDS are done. Calculated Setpoints
                 and loadcell readings are fed into the PID blocks. View the pdf
@@ -515,13 +515,13 @@
                 >LoadCell_Simulation(FC) [FC2]-PDF</a
               >
               <p>
-                This function handles the loadcell reading simulation
+                This function handles the load cell reading simulation
                 process.The function is called by(LoadCell_Simulation(0.1s)
-                [OB31]). For us to impliment the PID without a real world plc we
+                [OB31]). For us to implement the PID without a real-world PLC, we
                 needed to simulate the loadcell reading, and this function helps
-                us do that. The function also limits the loadcell reading to 350
-                as the maximum and zero as the minimum. View the pdf file by
-                clicking the link above.
+                us do that. The function also limits the load cell reading to 350
+                as the maximum and zero as the minimum. View the PDF file by
+                Clicking the link above.
               </p>
             </div>
             <div class="pdf-item">
@@ -531,12 +531,12 @@
                 >SelectionIndication [FC10]-PDF</a
               >
               <p>
-                This function handles the cement type selection process.The
+                This function handles the cement type selection process. The
                 function is called by(Cement_TypesSelection [OB33]). When a
                 cement type is selected by the operator, this is the function
                 that handles the selection. It uses an SR Flip-flop to set the
                 selection, and the flip-flop is reset if another cement type is
-                selected.View the pdf file by clicking the link above.
+                selected. View the PDF file by clicking the link above.
               </p>
             </div>
             <div class="pdf-item">
@@ -547,10 +547,10 @@
               >
               <p>
                 This function handles the calculation of the setpoints for each
-                raw materials in (tph).The function is called
+                raw materials in (tph). The function is called
                 by(Cement_TypesSelection [OB33]). The function takes in the
-                setpoint in percentage and makes the calculation to determine
-                the value in tph.View the pdf file by clicking the link above.
+                setpoint in percentage, and makes the calculation to determine
+                The setpoint value in tph.View the PDF file by clicking the link above.
               </p>
             </div>
             <div class="pdf-item">
@@ -561,11 +561,11 @@
               >
               <p>
                 This function handles the movement of setpoints when a cement
-                type is selected. According to the type of cement selected, the
+                Type is selected. According to the type of cement selected, the
                 setpoints for that cement are moved from the MaterialRationing
                 [DB10] data block to WeighFeeders[DB1] data block. The function
-                is called by(Cement_TypesSelection [OB33]).View the pdf file by
-                clicking the link above.
+                is called by(Cement_TypesSelection [OB33]).View the PDF file by
+                Clicking the link above.
               </p>
             </div>
           </div>
@@ -588,6 +588,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   </body>
 </html>
+
 
 
 
